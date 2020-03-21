@@ -2,6 +2,7 @@
 
 function destroyer(arr) {
   const argArr = [...arguments].slice(1);
+  console.log(argArr);
   // 1)
   // const filteredArr = [];
   // for (let i = 0; i < arr.length; i++) {
@@ -11,9 +12,7 @@ function destroyer(arr) {
   // }
 
   // 2) Higher Order Function
-  const filteredArr = arr.filter(ea => !argArr.includes(ea));
-
-  console.log(filteredArr);
+  return arr.filter(ea => !argArr.includes(ea));
 }
 
-destroyer([1, 2, 3, 1, 2], 3, 2);
+console.log(destroyer([1, 2, 3, 1, 2], 3, 2));

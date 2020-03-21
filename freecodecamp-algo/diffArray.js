@@ -16,7 +16,8 @@ function diffArray(arr1, arr2) {
 
   const union = []; // unique arr with elements from two arrays
 
-  // const union2 = new Set([...arr1, ...arr2]);
+  const union2 = new Set([...arr1, ...arr2]);
+  // console.log(">>>", union2);
   // this ECMA6 set does the below by single line
 
   for (let i = 0; i < arr1.length; i++) {
